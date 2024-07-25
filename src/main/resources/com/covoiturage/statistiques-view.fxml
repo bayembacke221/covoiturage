@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.chart.BarChart?>
+<?import javafx.scene.chart.CategoryAxis?>
+<?import javafx.scene.chart.NumberAxis?>
+<?import javafx.scene.chart.PieChart?>
+
+<VBox xmlns="http://javafx.com/javafx"
+      xmlns:fx="http://javafx.com/fxml"
+      fx:controller="com.covoiturage.controller.RapportController"
+      spacing="10" alignment="CENTER">
+
+    <ComboBox fx:id="conducteurComboBox" promptText="Sélectionnez un conducteur"/>
+    <ComboBox fx:id="moisComboBox" promptText="Sélectionnez un mois"/>
+    <ComboBox fx:id="anneeComboBox" promptText="Sélectionnez une année"/>
+
+    <BarChart fx:id="trajetsMoisBarChart" title="Nombre de trajets du mois par conducteur">
+        <xAxis>
+            <CategoryAxis label="Trajet"/>
+        </xAxis>
+        <yAxis>
+            <NumberAxis label="Nombre de trajets"/>
+        </yAxis>
+    </BarChart>
+
+    <PieChart fx:id="montantGagnePieChart" title="Montant gagné par mois"/>
+
+</VBox>

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.Insets?>
+
+<VBox xmlns="http://javafx.com/javafx/17"
+      xmlns:fx="http://javafx.com/fxml/1"
+      fx:controller="com.covoiturage.controller.UtilisateursController"
+      styleClass="users-view"
+      stylesheets="@utilisateurs-view.css"
+      spacing="20">
+    <padding>
+        <Insets top="20" right="20" bottom="20" left="20"/>
+    </padding>
+
+    <HBox spacing="10" alignment="CENTER">
+        <TextField fx:id="searchField" promptText="Rechercher un utilisateur" HBox.hgrow="ALWAYS"/>
+        <Button text="Rechercher" onAction="#rechercher" styleClass="action-button"/>
+        <Button text="Ajouter un utilisateur" onAction="#ajouterUtilisateur" styleClass="action-button, add-button"/>
+    </HBox>
+
+    <Label text="Passagers" styleClass="section-title"/>
+    <TableView fx:id="passagersTable" VBox.vgrow="ALWAYS" styleClass="users-table">
+        <columns>
+            <TableColumn fx:id="passagerIdColumn" text="ID" minWidth="50" maxWidth="100"/>
+            <TableColumn fx:id="passagerNomColumn" text="Nom" minWidth="100"/>
+            <TableColumn fx:id="passagerPrenomColumn" text="Prénom" minWidth="100"/>
+            <TableColumn fx:id="passagerEmailColumn" text="Email" minWidth="200"/>
+            <TableColumn fx:id="passagerActionsColumn" text="Actions" minWidth="200"/>
+        </columns>
+    </TableView>
+
+    <Label text="Conducteurs" styleClass="section-title"/>
+    <TableView fx:id="conducteursTable" VBox.vgrow="ALWAYS" styleClass="users-table">
+        <columns>
+            <TableColumn fx:id="conducteurIdColumn" text="ID" minWidth="50" maxWidth="100"/>
+            <TableColumn fx:id="conducteurNomColumn" text="Nom" minWidth="100"/>
+            <TableColumn fx:id="conducteurPrenomColumn" text="Prénom" minWidth="100"/>
+            <TableColumn fx:id="conducteurEmailColumn" text="Email" minWidth="200"/>
+            <TableColumn fx:id="conducteurActionsColumn" text="Actions" minWidth="200"/>
+        </columns>
+    </TableView>
+</VBox>

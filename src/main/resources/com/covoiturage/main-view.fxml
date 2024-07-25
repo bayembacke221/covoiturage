@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.Insets?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<BorderPane xmlns="http://javafx.com/javafx/17"
+            xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="com.covoiturage.controller.MainController"
+            stylesheets="@styles.css">
+    <top>
+        <HBox spacing="10" alignment="CENTER_LEFT" styleClass="top-bar">
+            <padding>
+                <Insets top="10" right="20" bottom="10" left="20"/>
+            </padding>
+            <Label text="Gestion de Covoiturage" styleClass="app-title"/>
+            <Region HBox.hgrow="ALWAYS"/>
+            <Label fx:id="userNameLabel" styleClass="user-name-label"/>
+            <JFXButton text="Déconnexion" onAction="#deconnexion"/>
+        </HBox>
+    </top>
+    <left>
+        <VBox spacing="10" styleClass="sidebar">
+            <padding>
+                <Insets top="20" right="10" bottom="20" left="10"/>
+            </padding>
+            <JFXButton fx:id="btnUtilisateurs" text="Utilisateurs" onAction="#gererUtilisateurs" styleClass="sidebar-button"/>
+            <JFXButton fx:id="btnVehicules" text="Véhicules" onAction="#gererVehicules" styleClass="sidebar-button"/>
+            <JFXButton fx:id="btnTrajets" text="Trajets" onAction="#gererTrajets" styleClass="sidebar-button"/>
+            <JFXButton fx:id="btnReservations" text="Réservations" onAction="#gererReservations" styleClass="sidebar-button"/>
+            <JFXButton fx:id="btnStatistiques" text="Statistiques" onAction="#afficherStatistiques" styleClass="sidebar-button"/>
+        </VBox>
+    </left>
+    <center>
+        <StackPane fx:id="contentArea">
+        </StackPane>
+    </center>
+</BorderPane>

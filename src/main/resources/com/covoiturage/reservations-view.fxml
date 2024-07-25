@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox spacing="10" xmlns:fx="http://javafx.com/fxml" fx:controller="com.covoiturage.controller.ReservationsController">
+    <padding>
+        <Insets top="20" right="20" bottom="20" left="20"/>
+    </padding>
+
+    <HBox spacing="10" alignment="CENTER_LEFT">
+        <Label text="Filtrer par statut:"/>
+        <ComboBox fx:id="statutFilterComboBox"/>
+    </HBox>
+
+    <TableView fx:id="reservationsTable" VBox.vgrow="ALWAYS">
+        <columns>
+            <TableColumn fx:id="idColumn" text="ID" prefWidth="50"/>
+            <TableColumn fx:id="trajetIdColumn" text="Trajet ID" prefWidth="100"/>
+            <TableColumn fx:id="passagerIdColumn" text="Passager ID" prefWidth="100"/>
+            <TableColumn fx:id="dateReservationColumn" text="Date de réservation" prefWidth="150"/>
+            <TableColumn fx:id="statutColumn" text="Statut" prefWidth="100"/>
+        </columns>
+    </TableView>
+
+    <HBox spacing="10" alignment="CENTER_RIGHT">
+        <Button text="Ajouter" onAction="#ajouterReservation"/>
+        <Button text="Modifier" onAction="#modifierReservation"/>
+        <Button text="Supprimer" onAction="#supprimerReservation"/>
+    </HBox>
+</VBox>

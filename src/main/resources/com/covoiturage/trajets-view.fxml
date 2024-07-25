@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox spacing="10" xmlns:fx="http://javafx.com/fxml" fx:controller="com.covoiturage.controller.TrajetsController">
+    <padding>
+        <Insets top="20" right="20" bottom="20" left="20"/>
+    </padding>
+
+    <HBox spacing="10" alignment="CENTER_LEFT">
+        <TextField fx:id="villeDepartField" promptText="Ville de départ" HBox.hgrow="ALWAYS"/>
+        <TextField fx:id="villeArriveeField" promptText="Ville d'arrivée" HBox.hgrow="ALWAYS"/>
+        <DatePicker fx:id="datePicker" promptText="Date de départ"/>
+        <Button text="Rechercher" onAction="#rechercher"/>
+    </HBox>
+
+    <TableView fx:id="trajetsTable" VBox.vgrow="ALWAYS">
+        <columns>
+            <TableColumn fx:id="idColumn" text="ID" prefWidth="50"/>
+            <TableColumn fx:id="villeDepartColumn" text="Départ" prefWidth="100"/>
+            <TableColumn fx:id="villeArriveeColumn" text="Arrivée" prefWidth="100"/>
+            <TableColumn fx:id="dateDepartColumn" text="Date de départ" prefWidth="150"/>
+            <TableColumn fx:id="placesDisponiblesColumn" text="Places" prefWidth="70"/>
+            <TableColumn fx:id="prixColumn" text="Prix" prefWidth="70"/>
+        </columns>
+    </TableView>
+
+    <HBox spacing="10" alignment="CENTER_RIGHT">
+        <Button text="Ajouter" onAction="#ajouterTrajet"/>
+        <Button text="Modifier" onAction="#modifierTrajet"/>
+        <Button text="Supprimer" onAction="#supprimerTrajet"/>
+    </HBox>
+</VBox>

@@ -1,0 +1,95 @@
+.root {
+    -fx-background-color: #f4f4f4;
+    -fx-font-family: "Roboto", sans-serif;
+}
+
+.top-bar {
+    -fx-background-color: #3498db;
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.8), 10, 0, 0, 0);
+}
+
+.app-title {
+    -fx-font-size: 24px;
+    -fx-text-fill: white;
+}
+
+.sidebar {
+    -fx-background-color: #2c3e50;
+    -fx-min-width: 200px;
+}
+
+.sidebar-button {
+    -fx-background-color: transparent;
+    -fx-text-fill: white;
+    -fx-font-size: 16px;
+    -fx-alignment: CENTER_LEFT;
+    -fx-padding: 10px;
+    -fx-cursor: hand;
+}
+
+.sidebar-button:hover {
+    -fx-background-color: #34495e;
+}
+
+.jfx-button {
+    -fx-background-color: #3498db;
+    -fx-text-fill: white;
+    -fx-font-size: 14px;
+    -fx-padding: 10px 20px;
+    -fx-cursor: hand;
+}
+
+.jfx-button:hover {
+    -fx-background-color: #2980b9;
+}
+
+.jfx-button:disabled {
+    -fx-background-color: #bdc3c7;
+    -fx-text-fill: white;
+}
+
+.jfx-text-field {
+    -fx-font-size: 14px;
+    -fx-padding: 10px;
+}
+
+.root {
+    -fx-background-color: linear-gradient(to bottom right, #1e3c72, #2a5298);
+}
+
+.login-box {
+    -fx-background-color: white;
+    -fx-background-radius: 10;
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.3), 10, 0, 0, 0);
+}
+
+.title-label {
+    -fx-text-fill: #2a5298;
+}
+
+.input-field {
+    -fx-pref-height: 40;
+    -fx-background-radius: 5;
+    -fx-border-color: #e0e0e0;
+    -fx-border-radius: 5;
+    -fx-border-width: 1;
+    -fx-padding: 5 10 5 10;
+}
+
+.login-button {
+    -fx-background-color: #2a5298;
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+    -fx-pref-height: 40;
+    -fx-background-radius: 5;
+}
+
+.login-button:hover {
+    -fx-background-color: #1e3c72;
+}
+
+.message-label {
+    -fx-text-fill: #ff0000;
+}
+
+

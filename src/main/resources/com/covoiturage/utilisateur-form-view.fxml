@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.Insets?>
+
+<VBox xmlns="http://javafx.com/javafx/17"
+      xmlns:fx="http://javafx.com/fxml/1"
+      fx:controller="com.covoiturage.controller.UtilisateurFormController"
+      spacing="10" alignment="CENTER">
+    <padding>
+        <Insets top="20" right="20" bottom="20" left="20"/>
+    </padding>
+
+    <TextField fx:id="nomField" promptText="Nom"/>
+    <TextField fx:id="prenomField" promptText="Prénom"/>
+    <TextField fx:id="emailField" promptText="Email"/>
+    <TextField fx:id="typeUtilisateurField" promptText="Type"/>
+
+    <HBox spacing="10" alignment="CENTER">
+        <Button text="Enregistrer" onAction="#enregistrer"/>
+        <Button text="Annuler" onAction="#annuler"/>
+    </HBox>
+</VBox>

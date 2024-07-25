@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox spacing="10" xmlns:fx="http://javafx.com/fxml" fx:controller="com.covoiturage.controller.VehiculesController">
+    <padding>
+        <Insets top="20" right="20" bottom="20" left="20"/>
+    </padding>
+
+    <HBox spacing="10" alignment="CENTER_LEFT">
+        <TextField fx:id="searchField" promptText="Rechercher un véhicule" HBox.hgrow="ALWAYS"/>
+        <Button text="Rechercher" onAction="#rechercher"/>
+    </HBox>
+
+    <TableView fx:id="vehiculesTable" VBox.vgrow="ALWAYS">
+        <columns>
+            <TableColumn fx:id="idColumn" text="ID" prefWidth="50"/>
+            <TableColumn fx:id="marqueColumn" text="Marque" prefWidth="100"/>
+            <TableColumn fx:id="modeleColumn" text="Modèle" prefWidth="100"/>
+            <TableColumn fx:id="immatriculationColumn" text="Immatriculation" prefWidth="150"/>
+        </columns>
+    </TableView>
+
+    <HBox spacing="10" alignment="CENTER_RIGHT">
+        <Button text="Ajouter" onAction="#ajouterVehicule"/>
+        <Button text="Modifier" onAction="#modifierVehicule"/>
+        <Button text="Supprimer" onAction="#supprimerVehicule"/>
+    </HBox>
+</VBox>

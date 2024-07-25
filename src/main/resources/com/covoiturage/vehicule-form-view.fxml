@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox spacing="10" xmlns:fx="http://javafx.com/fxml" fx:controller="com.covoiturage.controller.VehiculeFormController">
+    <padding>
+        <Insets top="20" right="20" bottom="20" left="20"/>
+    </padding>
+
+    <GridPane vgap="10" hgap="10">
+        <Label text="Marque:" GridPane.columnIndex="0" GridPane.rowIndex="0"/>
+        <TextField fx:id="marqueField" GridPane.columnIndex="1" GridPane.rowIndex="0"/>
+
+        <Label text="Modèle:" GridPane.columnIndex="0" GridPane.rowIndex="1"/>
+        <TextField fx:id="modeleField" GridPane.columnIndex="1" GridPane.rowIndex="1"/>
+
+        <Label text="Immatriculation:" GridPane.columnIndex="0" GridPane.rowIndex="2"/>
+        <TextField fx:id="immatriculationField" GridPane.columnIndex="1" GridPane.rowIndex="2"/>
+
+        <Label text="Propriétaire:" GridPane.columnIndex="0" GridPane.rowIndex="3"/>
+        <ComboBox fx:id="proprietaireComboBox" GridPane.columnIndex="1" GridPane.rowIndex="3"/>
+    </GridPane>
+
+    <HBox spacing="10" alignment="CENTER_RIGHT">
+        <Button text="Enregistrer" onAction="#enregistrer"/>
+        <Button text="Annuler" onAction="#annuler"/>
+    </HBox>
+</VBox>

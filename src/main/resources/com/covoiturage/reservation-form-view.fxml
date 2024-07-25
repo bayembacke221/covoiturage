@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox spacing="10" xmlns:fx="http://javafx.com/fxml" fx:controller="com.covoiturage.controller.ReservationFormController">
+    <padding>
+        <Insets top="20" right="20" bottom="20" left="20"/>
+    </padding>
+
+    <GridPane vgap="10" hgap="10">
+        <Label text="Trajet:" GridPane.columnIndex="0" GridPane.rowIndex="0"/>
+        <ComboBox fx:id="trajetComboBox" GridPane.columnIndex="1" GridPane.rowIndex="0"/>
+
+        <Label text="Passager:" GridPane.columnIndex="0" GridPane.rowIndex="1"/>
+        <ComboBox fx:id="passagerComboBox" GridPane.columnIndex="1" GridPane.rowIndex="1"/>
+
+        <Label text="Date de réservation:" GridPane.columnIndex="0" GridPane.rowIndex="2"/>
+        <DatePicker fx:id="dateReservationPicker" GridPane.columnIndex="1" GridPane.rowIndex="2"/>
+
+        <Label text="Statut:" GridPane.columnIndex="0" GridPane.rowIndex="3"/>
+        <ComboBox fx:id="statutComboBox" GridPane.columnIndex="1" GridPane.rowIndex="3"/>
+    </GridPane>
+
+    <HBox spacing="10" alignment="CENTER_RIGHT">
+        <Button text="Enregistrer" onAction="#enregistrer"/>
+        <Button text="Annuler" onAction="#annuler"/>
+    </HBox>
+</VBox>
