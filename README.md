@@ -8,24 +8,37 @@ Cette application de bureau, développée en Java, permet la gestion complète d
 
 Voici quelques captures d'écran de l'application en action :
 
+### Page de Connexion
+* Page de connexion sécurisée pour accéder à l'application.
+![Page de Connexion](screenshots/connexion.png)
+
 ### Page d'accueil
 ![Page d'accueil](screenshots/accueil.png)
 *La page d'accueil offre un aperçu rapide des fonctionnalités principales.*
 
 ### Gestion des utilisateurs
-![Gestion des utilisateurs](screenshots/utilisateurs.png)
+![Gestion des utilisateurs](screenshots/gestion-user.png)
+![Ajouter des utilisateurs](screenshots/add-user.png)
+![Modifier des utilisateurs](screenshots/update-user.png)
+![Supprimer des utilisateurs](screenshots/remove-user.png)
+![Rechercher des utilisateurs](screenshots/search-user.png)
 *Interface de gestion des utilisateurs permettant d'ajouter, modifier et supprimer des profils.*
 
-### Recherche de trajets
-![Recherche de trajets](screenshots/recherche_trajets.png)
+### Gestion des trajets
+![Gestion de trajets](screenshots/gestion-trajet.png)
+![Ajouter de trajets](screenshots/add-trajet.png)
+![Modifier de trajets](screenshots/update-trajet.png)
 *Écran de recherche de trajets avec des filtres avancés.*
 
 ### Réservation d'un trajet
-![Réservation d'un trajet](screenshots/reservation.png)
+![Réservation d'un trajet](screenshots/gestion-reservation.png)
+![Ajouter une réservation](screenshots/add-reservation.png)
+![Modifier une réservation](screenshots/update-reservation.png)
 *Processus de réservation d'un trajet, simple et intuitif.*
 
 ### Tableau de bord statistiques
-![Tableau de bord statistiques](screenshots/statistiques.png)
+![Tableau de bord statistiques](screenshots/statistique.png)
+![Tableau de bord rapport](screenshots/rapport.png)
 *Tableau de bord présentant des statistiques et graphiques sur l'utilisation du service.*
 
 ## Fonctionnalités Principales
