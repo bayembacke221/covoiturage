@@ -4,43 +4,6 @@
 
 Cette application de bureau, développée en Java, permet la gestion complète d'un service de covoiturage. Elle offre une interface utilisateur intuitive pour gérer les utilisateurs, les trajets, les réservations et les évaluations.
 
-## Captures d'écran
-
-Voici quelques captures d'écran de l'application en action :
-
-### Page de Connexion
-* Page de connexion sécurisée pour accéder à l'application.
-![Page de Connexion](screenshots/connexion.png)
-
-### Page d'accueil
-![Page d'accueil](screenshots/accueil.png)
-*La page d'accueil offre un aperçu rapide des fonctionnalités principales.*
-
-### Gestion des utilisateurs
-![Gestion des utilisateurs](screenshots/gestion-user.png)
-![Ajouter des utilisateurs](screenshots/add-user.png)
-![Modifier des utilisateurs](screenshots/update-user.png)
-![Supprimer des utilisateurs](screenshots/remove-user.png)
-![Rechercher des utilisateurs](screenshots/search-user.png)
-*Interface de gestion des utilisateurs permettant d'ajouter, modifier et supprimer des profils.*
-
-### Gestion des trajets
-![Gestion de trajets](screenshots/gestion-trajet.png)
-![Ajouter de trajets](screenshots/add-trajet.png)
-![Modifier de trajets](screenshots/update-trajet.png)
-*Écran de recherche de trajets avec des filtres avancés.*
-
-### Réservation d'un trajet
-![Réservation d'un trajet](screenshots/gestion-reservation.png)
-![Ajouter une réservation](screenshots/add-reservation.png)
-![Modifier une réservation](screenshots/update-reservation.png)
-*Processus de réservation d'un trajet, simple et intuitif.*
-
-### Tableau de bord statistiques
-![Tableau de bord statistiques](screenshots/statistique.png)
-![Tableau de bord rapport](screenshots/rapport.png)
-*Tableau de bord présentant des statistiques et graphiques sur l'utilisation du service.*
-
 ## Fonctionnalités Principales
 
 ### Gestion des Utilisateurs
@@ -104,6 +67,44 @@ L'application suit le modèle MVC (Modèle-Vue-Contrôleur) :
 4. Modifiez le fichier `hibernate.cfg.xml` avec vos paramètres de base de données
 5. Exécutez `mvn clean install` pour construire le projet
 6. Lancez l'application avec `java -jar target/nom-du-jar.jar`
+
+
+## Captures d'écran
+
+Voici quelques captures d'écran de l'application en action :
+
+### Page de Connexion
+* Page de connexion sécurisée pour accéder à l'application.
+  ![Page de Connexion](screenshots/connexion.png)
+
+### Page d'accueil
+![Page d'accueil](screenshots/accueil.png)
+*La page d'accueil offre un aperçu rapide des fonctionnalités principales.*
+
+### Gestion des utilisateurs
+![Gestion des utilisateurs](screenshots/gestion-user.png)
+![Ajouter des utilisateurs](screenshots/add-user.png)
+![Modifier des utilisateurs](screenshots/update-user.png)
+![Supprimer des utilisateurs](screenshots/remove-user.png)
+![Rechercher des utilisateurs](screenshots/search-user.png)
+*Interface de gestion des utilisateurs permettant d'ajouter, modifier et supprimer des profils.*
+
+### Gestion des trajets
+![Gestion de trajets](screenshots/gestion-trajet.png)
+![Ajouter de trajets](screenshots/add-trajet.png)
+![Modifier de trajets](screenshots/update-trajet.png)
+*Écran de recherche de trajets avec des filtres avancés.*
+
+### Réservation d'un trajet
+![Réservation d'un trajet](screenshots/gestion-reservation.png)
+![Ajouter une réservation](screenshots/add-reservation.png)
+![Modifier une réservation](screenshots/update-reservation.png)
+*Processus de réservation d'un trajet, simple et intuitif.*
+
+### Tableau de bord statistiques
+![Tableau de bord statistiques](screenshots/statistique.png)
+![Tableau de bord rapport](screenshots/rapport.png)
+*Tableau de bord présentant des statistiques et graphiques sur l'utilisation du service.*
 
 ## Contribution
 
